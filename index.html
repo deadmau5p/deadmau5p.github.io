@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal landing page for deadmau5p — developer, creator, and electronic music enthusiast.">
+  <title>deadmau5p | Projects & Experiments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header class="hero" id="top">
+    <nav class="nav">
+      <a class="nav__logo" href="#top">deadmau5p</a>
+      <div class="nav__links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Hello, I'm Aljaž</p>
+      <h1 class="hero__title">Building playful digital moments and audio experiments.</h1>
+      <p class="hero__subtitle">
+        I explore the overlap of code, sound, and design. This space collects my latest prototypes,
+        open source bits, and live performance tools.
+      </p>
+      <div class="hero__cta">
+        <a class="button button--primary" href="#projects">See what's new</a>
+        <a class="button button--ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <div class="section__inner">
+        <h2 class="section__title">About</h2>
+        <p>
+          I'm a developer and electronic music enthusiast experimenting with web aesthetics, creative
+          coding, and live audio tooling. My work lives evenly between shipping polished experiences
+          and tinkering with in-progress projects that prioritize curiosity.
+        </p>
+        <p>
+          You'll find a rotating collection of visual sketches, interactive demos, and utilities that
+          support my performances and collaborations.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="projects">
+      <div class="section__inner">
+        <h2 class="section__title">Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3 class="card__title">Signal Playground</h3>
+            <p class="card__body">
+              A browser-based modular synth sandbox built with Web Audio. Drag, patch, and experiment
+              with custom effects and sequencers.
+            </p>
+            <a class="card__link" href="https://github.com/deadmau5p/signal-playground" target="_blank" rel="noopener noreferrer">
+              View repository
+            </a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Glitch Pulse Visualizer</h3>
+            <p class="card__body">
+              WebGL-driven visual performance tool that reacts to live audio input. Built with
+              Three.js shaders and MIDI mapping.
+            </p>
+            <a class="card__link" href="https://github.com/deadmau5p/glitch-pulse" target="_blank" rel="noopener noreferrer">
+              View repository
+            </a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Lo-Fi Scheduler</h3>
+            <p class="card__body">
+              Minimalist productivity companion that pairs task management with ambient soundscapes to
+              keep focus sessions relaxed.
+            </p>
+            <a class="card__link" href="https://github.com/deadmau5p/lofi-scheduler" target="_blank" rel="noopener noreferrer">
+              View repository
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section__inner">
+        <h2 class="section__title">Contact</h2>
+        <p>
+          Curious to collaborate, jam on an idea, or remix a prototype? Reach out via
+          <a href="mailto:aljaz@deadmau5p.com">aljaz@deadmau5p.com</a> or follow along on the links below.
+        </p>
+        <div class="social">
+          <a class="social__link" href="https://github.com/deadmau5p" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="social__link" href="https://instagram.com/deadmau5p" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a class="social__link" href="https://soundcloud.com/deadmau5p" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>© <span id="year"></span> deadmau5p. Crafted in Slovenia.</span>
+      <a class="footer__top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const year = new Date().getFullYear();
+    document.getElementById('year').textContent = year;
+  </script>
+</body>
+</html>
